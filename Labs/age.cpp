@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int main(){
     int c_year, c_age, b_year;
     c_year = 2023;
