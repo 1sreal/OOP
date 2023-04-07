@@ -18,10 +18,12 @@ SubscriberCount = 0;
 }
 int Subscribe(){
     SubscriberCount += 1 ;
+    return SubscriberCount;
 }
 int Unsubscribe(){
     if (SubscriberCount > 0) {
     SubscriberCount -= 1;
+    return SubscriberCount;
 }
 }
 string getname(){
@@ -46,7 +48,10 @@ cout << "Number of Subscribers: " <<SubscriberCount <<endl;
 int main(){
     YoutubeChannel ytChannel(  "izzyTv" , "izzy" );
     ytChannel.PublishVideo( "OOP Tutorial. ");
-
-
+    ytChannel.Subscribe();
+    ytChannel.Subscribe();
+    ytChannel.Subscribe();
+    ytChannel.Unsubscribe();
+    ytChannel.GetInfo();
 return 0;
 }
