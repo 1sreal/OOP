@@ -45,7 +45,7 @@ cout << "Number of Subscribers: " <<SubscriberCount <<endl;
 };
 
 
-int main(){
+/*int main(){
     YoutubeChannel ytChannel(  "izzyTv" , "izzy" );
     ytChannel.PublishVideo( "OOP Tutorial. ");
     ytChannel.Subscribe();
@@ -54,4 +54,15 @@ int main(){
     ytChannel.Unsubscribe();
     ytChannel.GetInfo();
 return 0;
+}*/
+int main(){
+    YoutubeChannel ytChannel("izzyTv", "izzy");
+    ytChannel.PublishVideo("OOP Tutorial.");
+    
+    for(int i=0; i<20; i++){
+        ytChannel.Subscribe();
+    }
+    
+    ytChannel.GetInfo();
+    return 0;
 }
